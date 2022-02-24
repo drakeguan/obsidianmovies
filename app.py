@@ -10,7 +10,7 @@ importlib.reload(utils)
 from utils import movie_search, create_markdown_page
 
 # Import a list of movie names to search
-to_search = pd.read_csv('movies_to_search.csv')
+to_search = pd.read_csv('movies_to_search.tsv', sep='\t')
 
 # Using the function to fill up the csv
 results = []
