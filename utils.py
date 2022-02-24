@@ -28,13 +28,20 @@ def movie_search(my_title):
         movie_id = lookups[0].movieID
 
         # get a movie
-        movie = ia.get_movie(movie_id)
+        movie = ia.get_movie(movie_id, info=('main', 'plot', 'akas'))
 
         # RETRIEVE DATA
         # Get the movie title searched for
         t = movie['title']
         information['title'] = t
         print(f'Retrieving data for {t}')
+
+        # Get the title name in Taiwan
+        try:
+            information['ctitle'] = [string for string in movie['akas'] if string.endswith('Taiwan')][0][:-7]
+        except:
+            print('Title name in Taiwan not available')
+            information['ctitle'] = ''
 
         # Get the plot outline
         try:
@@ -145,22 +152,30 @@ def create_markdown_page(myresults):
     # Create iterations
     for index, row in myresults.iterrows():
         # Create a file
-        mdFile = MdUtils(file_name=row['title'])
+        mdFile = MdUtils(file_name='notes/'+row['title'])
         mdFile.title = ''
 
         # Create a metadata section
         mdFile.write(text='---\n')
         mdFile.write(text='type: movie\n')
-        facts = ['title', 'year', 'rating','genre', 'country', 'director', 'cast', 'cover url']
+        facts = ['title', 'ctitle', 'year', 'rating','genre', 'country', 'director', 'cast', 'cover url']
         for f in facts:
             if f == 'cover url':
-                mdFile.write(text='cover: ' + row['cover url'] + '\n', wrap_width=0)
+                mdFile.write(text='cover: ' + row[f] + '\n', wrap_width=0)
+            elif f == 'title':
+                mdFile.write(text='title: "' + row[f] + '"\n', wrap_width=0)
+            elif f == 'ctitle':
+                mdFile.write(text='ctitle: "' + row[f] + '"\n', wrap_width=0)
+                mdFile.write(text='aliases: "' + row[f] + '"\n', wrap_width=0)
             else:
                 mdFile.write(text=f'{f}: {row[f]}\n')
         mdFile.write(text='---\n')
 
         # Create a title
         mdFile.new_header(level=1, title=row['title'])
+
+        # Create a Taiwanese title
+        mdFile.new_header(level=1, title=row['ctitle'])
 
         # Create a cover
         # i could use new_inline_image but the text wraps at 20 characters
