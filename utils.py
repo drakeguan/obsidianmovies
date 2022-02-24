@@ -1,5 +1,4 @@
-
-from imdb import IMDb
+from imdb import Cinemagoer
 from mdutils.mdutils import MdUtils
 
 # Write a function to get intended results given a movie title
@@ -18,7 +17,7 @@ def movie_search(my_title):
     information = dict()
 
     # create an instance of the IMDb class
-    ia = IMDb()
+    ia = Cinemagoer()
 
     # search for a movie
     lookups = ia.search_movie(my_title)
@@ -147,15 +146,18 @@ def create_markdown_page(myresults):
     for index, row in myresults.iterrows():
         # Create a file
         mdFile = MdUtils(file_name=row['title'])
+        mdFile.title = ''
 
         # Create a metadata section
-        mdFile.new_line(text='---\n')
-        facts = ['year', 'rating','genre', 'country', 'director', 'cast']
+        mdFile.write(text='---\n')
+        mdFile.write(text='type: movie\n')
+        facts = ['title', 'year', 'rating','genre', 'country', 'director', 'cast', 'cover url']
         for f in facts:
-            mdFile.new_line(text=f'{f.title()}: {row[f]}')
-        mdFile.new_line(text='Type: Review')
-        mdFile.new_line(text='')
-        mdFile.new_line(text='---\n')
+            if f == 'cover url':
+                mdFile.write(text='cover: ' + row['cover url'] + '\n', wrap_width=0)
+            else:
+                mdFile.write(text=f'{f}: {row[f]}\n')
+        mdFile.write(text='---\n')
 
         # Create a title
         mdFile.new_header(level=1, title=row['title'])
@@ -164,19 +166,21 @@ def create_markdown_page(myresults):
         # i could use new_inline_image but the text wraps at 20 characters
         # creating a break. Hence, I code my own image line and unwrap it
         cover_link = '!['+ row['title'] + '](' + row['cover url'] + ')'
-        mdFile.write(text = cover_link, wrap_width=0)
+        mdFile.new_line(text = cover_link, wrap_width=0)
+        mdFile.write(text='\n')
 
         # Create a section for the plot
-        mdFile.new_header(level=1, title="Plot")
+        mdFile.new_header(level=2, title="Plot")
 
         # Clean up plot text
         plot_text = row['plot']
         plot_text = ' '.join(plot_text.split())
         plot_text = plot_text.replace('\ ','')
         mdFile.new_line(text=plot_text, wrap_width=0)
+        mdFile.write(text='\n')
 
         # Create my own review section
-        mdFile.new_header(level=1, title="My own thoughts")
+        mdFile.new_header(level=2, title="My own thoughts")
 
         # Create markdown
         mdFile.create_md_file()
