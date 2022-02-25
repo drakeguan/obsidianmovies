@@ -1,5 +1,42 @@
+import re
+import unicodedata
+
 from imdb import Cinemagoer
 from mdutils.mdutils import MdUtils
+
+# Maximum file name length of 255 characters for Mac: 255
+# Make it 250 here for the extension part.
+char_limit = 250
+
+def clean_filename(filename, allow_unicode=False):
+    """
+    Convert to ASCII if 'allow_unicode' is False. Convert spaces or repeated
+    dashes to single dashes. Remove characters that aren't alphanumerics,
+    underscores, or hyphens. Convert to lowercase. Also strip leading and
+    trailing whitespace, dashes, and underscores.
+
+    ref:
+      - https://github.com/django/django/blob/main/django/utils/text.py
+      - https://gist.github.com/wassname/1393c4a57cfcbf03641dbc31886123b8
+      - https://stackoverflow.com/questions/295135/turn-a-string-into-a-valid-filename
+    """
+    value = str(filename)
+    if allow_unicode:
+        value = unicodedata.normalize('NFKC', value)
+    else:
+        value = (
+            unicodedata.normalize("NFKD", value)
+            .encode("ascii", "ignore")
+            .decode("ascii")
+        )
+    
+    value = re.sub(r"[^\w\s-]", "", value.lower())
+    value = re.sub(r"[-\s]+", "-", value).strip("-_")
+
+    if len(value)>char_limit:
+        print("Warning, filename truncated because it was over {}. Filenames may no longer be unique".format(char_limit))
+    return value[:char_limit]
+
 
 # Write a function to get intended results given a movie title
 def movie_search(my_title):
@@ -152,7 +189,7 @@ def create_markdown_page(myresults):
     # Create iterations
     for index, row in myresults.iterrows():
         # Create a file
-        mdFile = MdUtils(file_name='notes/'+row['title'])
+        mdFile = MdUtils(file_name='notes/'+clean_filename(row['title']))
         mdFile.title = ''
 
         # Create a metadata section
