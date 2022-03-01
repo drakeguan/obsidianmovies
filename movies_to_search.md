@@ -24,11 +24,13 @@ Braveheart
 Butch Cassidy and the Sundance Kid
 Cast Away
 Chariots of Fire
+Chef
 Cinema Paradiso
 Cloud Atlas
 Coach Carter
 Crash
 Dark City (1998)
+Darkest Hour
 Dead Poets Society
 Din Tao: Leader of the Parade
 Edge of Tomorrow
@@ -44,6 +46,7 @@ Gone Girl
 Good Will Hunting
 Grave of the Fireflies
 Gravity
+Hacksaw Ridge
 Her
 Hidden Figures
 I'm off then
@@ -62,6 +65,7 @@ Kimi no na wa.
 Life Is Beautiful
 Life of Pi
 Like Stars on Earth
+Little Miss Sunshine
 Little Women
 Looper (2012)
 Lust, Caution
@@ -104,6 +108,7 @@ The Assassin
 The Big Lebowski
 The Big Short
 The Bucket List
+The Curious Case of Benjamin Button
 The Dark Knight
 The Diving Bell and the Butterfly
 The Fifth Element
@@ -122,6 +127,7 @@ The Man Who Knew Infinity
 The Martian
 The Matrix
 The Mission
+The Painter and the Thief
 The Peaceful Warrior
 The Pianist
 The Pilgrim
