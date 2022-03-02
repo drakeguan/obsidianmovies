@@ -37,6 +37,7 @@ Edge of Tomorrow
 Eternal Sunshine of the Spotless Mind
 Face Off
 Fight Club
+Finch
 Ford v. Ferrari
 Forrest Gump
 Gattaca
@@ -60,6 +61,7 @@ Into The Wild
 Invictus
 Ip Man (2008)
 Joker
+Junk Head
 Jurassic Park
 Kimi no na wa.
 Life Is Beautiful
@@ -135,6 +137,7 @@ The Prestige
 The Pursuit of Happiness
 The Schindler's List
 The Secret Life of Walter Mitty
+The Shape of Water
 The Shawshank Redemption
 The Silence of the Lambs
 The Squid and the Whale
