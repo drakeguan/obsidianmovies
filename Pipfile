@@ -10,7 +10,6 @@ pandas = "*"
 mdutils = "*"
 tabulate = "*"
 cinemagoer = "*"
-ipython = "*"
 
 [dev-packages]
 
