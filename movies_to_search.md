@@ -17,10 +17,13 @@ Amadeus
 Apocalypto
 Armageddon
 Awakenings
+Babel (2006)
 Back to the Future
 Before Sunrise
 Beyond Beauty: Taiwan from Above
+Blue Jasmine
 Braveheart
+Bullet Train
 Butch Cassidy and the Sundance Kid
 Cast Away
 Chariots of Fire
@@ -34,6 +37,7 @@ Darkest Hour
 Dead Poets Society
 Din Tao: Leader of the Parade
 Edge of Tomorrow
+Elizabeth (1998)
 Eternal Sunshine of the Spotless Mind
 Face Off
 Fight Club
