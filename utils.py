@@ -200,10 +200,10 @@ def create_markdown_page(myresults):
             if f == 'cover url':
                 mdFile.write(text='cover: ' + row[f] + '\n', wrap_width=0)
             elif f == 'title':
-                mdFile.write(text='title: "' + row[f] + '"\n', wrap_width=0)
+                mdFile.write(text='title: "' + str(row[f]) + '"\n', wrap_width=0)
             elif f == 'ctitle':
-                mdFile.write(text='ctitle: "' + row[f] + '"\n', wrap_width=0)
-                mdFile.write(text='aliases: "' + row[f] + '"\n', wrap_width=0)
+                mdFile.write(text='ctitle: "' + str(row[f]) + '"\n', wrap_width=0)
+                mdFile.write(text='aliases: "' + str(row[f]) + '"\n', wrap_width=0)
             else:
                 mdFile.write(text=f'{f}: {row[f]}\n')
         mdFile.write(text='---\n')
