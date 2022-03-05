@@ -94,6 +94,7 @@ Pay It Forward
 Pink
 Princess Mononoke
 Rain Man
+Rango
 Ready Player One
 Remember the Titans
 Rocky
