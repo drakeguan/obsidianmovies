@@ -3,9 +3,9 @@ import multiprocessing
 import pickle
 
 import pandas as pd
-from pqdm.processes import pqdm
+#from pqdm.processes import pqdm
 # If you want threads instead:
-# from pqdm.threads import pqdm
+from pqdm.threads import pqdm
 
 import utils
 
@@ -15,7 +15,7 @@ def main():
 
     # query to IMDB to fill up the csv
     my_search = to_search['Movies'].tolist()
-    results = pqdm(my_search, movie_search, n_jobs=multiprocessing.cpu_count())
+    results = pqdm(my_search, movie_search, n_jobs=multiprocessing.cpu_count() * 2)
     myresults = pd.DataFrame(results)
 
     # Save a copy of myresults
