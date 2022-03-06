@@ -20,6 +20,7 @@ Awakenings
 Babel (2006)
 Back to the Future
 Before Sunrise
+Betty Blue
 Beyond Beauty: Taiwan from Above
 Blue Jasmine
 Braveheart
@@ -79,6 +80,7 @@ Léon: The Professional
 Mad Max: Fury Road
 Malèna
 Mary and Max
+Match Point
 Memento
 Million Dollar Baby
 Minari
@@ -137,6 +139,7 @@ The Mission
 The Painter and the Thief
 The Peaceful Warrior
 The Pianist
+The Piano
 The Pilgrim
 The Prestige
 The Pursuit of Happiness
@@ -149,10 +152,12 @@ The Squid and the Whale
 The Terminal
 The Truman Show
 The Way
+The Worst Person in the World
 WALL·E
 Waking Life
 When Harry Met Sally
 Wild
 Yangguang puzhao
+Yasashii Jikan
 Yes Man
 You've Got Mail
