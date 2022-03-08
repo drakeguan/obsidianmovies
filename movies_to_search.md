@@ -20,6 +20,7 @@ Awakenings
 Babel (2006)
 Back to the Future
 Before Sunrise
+Being John Malkovich
 Betty Blue
 Beyond Beauty: Taiwan from Above
 Blue Jasmine
@@ -32,6 +33,7 @@ Chef
 Cinema Paradiso
 Cloud Atlas
 Coach Carter
+Concussion
 Crash
 Dark City (1998)
 Darkest Hour
@@ -40,6 +42,7 @@ Din Tao: Leader of the Parade
 Edge of Tomorrow
 Elizabeth (1998)
 Eternal Sunshine of the Spotless Mind
+Ex Machina
 Face Off
 Fight Club
 Finch
@@ -121,6 +124,7 @@ The Curious Case of Benjamin Button
 The Dark Knight
 The Diving Bell and the Butterfly
 The Fifth Element
+The Go Master
 The Godfather
 The Grandmaster
 The Green Mile
@@ -143,6 +147,7 @@ The Piano
 The Pilgrim
 The Prestige
 The Pursuit of Happiness
+The Revenant
 The Schindler's List
 The Secret Life of Walter Mitty
 The Shape of Water
