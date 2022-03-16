@@ -67,6 +67,7 @@ E.T. the Extra-Terrestrial
 Edge of Tomorrow
 Elizabeth (1998)
 Eternal Sunshine of the Spotless Mind
+Everything Everywhere All at Once
 Ex Machina
 Face Off
 Fargo
@@ -162,6 +163,7 @@ The Artist
 The Assassin
 The Big Lebowski
 The Big Short
+The Book Thief
 The Bucket List
 The Curious Case of Benjamin Button
 The Dark Knight
@@ -183,6 +185,7 @@ The Imitation game
 The Intouchables
 The Iron Giant
 The Kings of Summer
+The Kite Runner
 The Last of the Mohicans
 The Legend of 1900
 The Lives of Others
