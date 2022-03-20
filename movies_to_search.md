@@ -1,4 +1,4 @@
-﻿Movies
+Movies
 12 Monkeys
 12 Years a Slave
 127 Hours
@@ -30,6 +30,7 @@ Avatar
 Awakenings
 Babel (2006)
 Back to the Future
+Band of Brothers
 Before Sunrise
 Before Sunset
 Being John Malkovich
@@ -77,6 +78,7 @@ Ford v. Ferrari
 Forrest Gump
 Gattaca
 Ghost in the Shell (1995)
+Gifted
 Gladiator
 Gone Girl
 Good Will Hunting
@@ -86,6 +88,7 @@ Gravity
 Hacksaw Ridge
 Her
 Hidden Figures
+Howl's Moving Castle
 I'm off then
 Ida
 Il Postino: The Postman
@@ -101,6 +104,7 @@ Ip Man (2008)
 Joker
 Junk Head
 Jurassic Park
+Kiki's Delivery Service
 Kikujiro
 Kimi no na wa.
 Lawrence of Arabia
@@ -131,10 +135,13 @@ Oblivion
 Of Mice and Men (1992)
 One Flew Over the Cuckoo's Nest
 Pan's Labyrinth
+Panda! Go, Panda!
 Parasite
 Pay It Forward
 Persepolis
 Pink
+Pom Poko
+Porco Rosso
 Princess Mononoke
 Pulp Fiction
 Raiders of the Lost Ark
@@ -158,12 +165,14 @@ Spider-Man: Into the Spider-Verse
 Spirited Away
 Star Wars
 Taxi Driver
+Tenkû no shiro Rapyuta
 Thank You for Smoking
 The Artist
 The Assassin
 The Big Lebowski
 The Big Short
 The Book Thief
+The Boy Who Harnessed the Wind
 The Bucket List
 The Curious Case of Benjamin Button
 The Dark Knight
@@ -214,7 +223,9 @@ The Silence of the Lambs
 The Social Network
 The Sound of Music
 The Squid and the Whale
+The Tender Bar
 The Terminal
+The Theory of Everything
 The Tree of Life
 The Truman Show
 The Usual Suspects
